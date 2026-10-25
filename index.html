@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Manan Choudhary — blockchain, graph machine learning, and backend engineering." />
+    <meta property="og:title" content="Manan Choudhary — Systems builder" />
+    <meta property="og:description" content="I build systems that detect fraud on-chain and scale under load." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mach808.github.io/portfolio/" />
+    <title>Manan Choudhary — Systems builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318120f'/%3E%3Cpath d='M14 47V17h7l11 18 11-18h7v30h-7V29L35 45h-6L21 29v18z' fill='%23e0a15a'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- CONTENT DATA: edit the text and links here. The page markup is rendered from this single block. -->
+    <script type="application/json" id="portfolio-content">
+      {
+        "name": "Manan Choudhary",
+        "eyebrow": "Computer Science · Blockchain · Machine Learning",
+        "tagline": "I build systems that detect fraud on-chain and scale under load.",
+        "intro": "B.Tech Computer Science student at Manipal University Jaipur, graduating in 2028. I work across blockchain, graph machine learning, and backend engineering.",
+        "status": "Research Intern @ IIT Madras (CYSTAR)",
+        "links": {"github":"https://github.com/Mach808","linkedin":"https://www.linkedin.com/in/choudharymanan251105/","email":"mailto:mananchoudhary1995@gmail.com","leetcode":"https://leetcode.com/MAC808","codeforces":"https://codeforces.com/profile/Mach0707"},
+        "about": ["I’m a CS undergrad at MUJ who researches on-chain fraud detection with graph neural networks, builds distributed backends, and enjoys competitive programming.","I like working close to the problem: understanding the data, designing reliable systems, and shipping useful interfaces around them."],
+        "skills": {"Languages":["C++","C","Python","TypeScript","JavaScript","Go","SQL","Solidity"],"Frameworks & Tools":["React","FastAPI","PostgreSQL","MySQL","MongoDB","AWS","Docker","Git","Flutter","PyTorch","PyTorch Geometric","Go net/http","Hardhat"],"Core CS":["DSA","OOD","Operating Systems","Computer Networks","Distributed Systems","Relational Databases"]},
+        "experience": [
+          {"role":"Research Intern","company":"IIT Madras (CYSTAR)","date":"May 2026 – Oct 2026","url":"https://cystar.iitm.ac.in/","description":"Researched and built ML and graph-based methods to detect and score risky Ethereum wallets for blockchain fraud investigation. Worked remotely for 6 months alongside academics, presenting weekly progress and submitting weekly reports."},
+          {"role":"Blockchain Intern","company":"BitViraj Technology Pvt. Ltd.","date":"May 2025 – Jul 2025","url":"https://www.bitviraj.com/","description":"Developed Ethereum smart contracts and dApps. Implemented ERC-3643 (T-REX) identity management and permissioned token transfers."},
+          {"role":"Software Development Intern","company":"Software Development Cell, MUJ","date":"Sep 2024 – Present","url":"","description":"Shipped full-stack web apps in an agile team with modern workflows and version control."}
+        ],
+        "projects": [
+          {"title":"Ethereum Wallet Risk Scoring","stack":"Graph Neural Networks · Python · XGBoost","featured":true,"url":"https://github.com/Mach808/wallet-risk-scoring-v5","bullets":["UI platform for a Tamil Nadu Government cyber fraud project assigned to IIT Madras: enter an Ethereum address and receive a risk score.","Classifies EOA vs smart contract and scores EOAs with XGBoost + GraphSAGE.","Async pipeline over ~4M transactions, 42 behavioral, temporal, ERC-20 and graph features; Test PR-AUC 0.918 against RF/XGBoost baselines."]},
+          {"title":"Distributed Job Processing System","stack":"Go · Flutter · PostgreSQL · AWS","url":"https://github.com/Mach808/Distributed-Job-Processing-System","bullets":["Full-stack system with Flutter frontend, Go backend, PostgreSQL on AWS RDS, and EC2 deployment with goroutines, worker pools and PostgreSQL-backed queues.","Fault tolerance via retries, lease-based job recovery, panic handling and stale-worker protection.","REST APIs plus concurrency testing with Go’s race detector."]},
+          {"title":"Attendance Monitoring System","stack":"FastAPI · Flutter · PostgreSQL","url":"https://github.com/AMS-MUJ","bullets":["Role-based platform for students, faculty and admins.","Backend on Render and PWA on Firebase Hosting.","Debugged JWT auth and API-contract mismatches across independently built frontend and backend."]},
+          {"title":"KnightGraph","stack":"GNN Chess Engine · Python","url":"https://github.com/Mach808/KnightGraph","bullets":["Modular chess engine combining Minimax, Alpha-Beta pruning and GNN-based position evaluation.","Positions are represented as interaction graphs."]}
+        ],
+        "community": [{"title":"Web Master","meta":"IEEE Student Branch MUJ · May 2026 – Present","text":"Manage the branch website, streamline event registrations, and mentor junior teams."},{"title":"Tech Co-Lead","meta":"GDSC MUJ · Sep 2025 – May 2026","text":"Ran hands-on workshops on Python, ML and Web3 fundamentals."},{"title":"Competitive Programming","meta":"Ongoing practice","text":"200+ LeetCode problems solved · Codeforces rating 1200.","links":true}]
+      }
+    </script>
+    <div id="site"></div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

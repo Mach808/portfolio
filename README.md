@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Manan Choudhary — static portfolio
 
-## Getting Started
+This is a framework-free portfolio built with plain HTML, CSS, and vanilla JavaScript. It can be hosted directly on GitHub Pages.
 
-First, run the development server:
+## Preview locally
+
+From this folder, start any simple static server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+python -m http.server 8000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open <http://localhost:8000>. Opening `index.html` directly also works, but a local server is closer to the GitHub Pages environment.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to GitHub Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push this repository to GitHub.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**, select your main branch and `/ (root)`, then save.
+4. GitHub Pages will serve the root `index.html` at the generated site URL.
 
-## Learn More
+## Editing guide
 
-To learn more about Next.js, take a look at the following resources:
+- **Content:** edit the clearly marked `CONTENT DATA` JSON block at the top of `index.html`.
+- **Colors, spacing, typography:** edit the CSS variables at the top of `styles.css`; the Google Font import is in `index.html`.
+- **Behavior:** `script.js` renders the data, mobile menu, active navigation, and scroll reveal effects.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site is self-contained and does not require Node, npm, or a build step.
